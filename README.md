@@ -24,7 +24,7 @@ Ensure you have the following installed before running the automation scripts:
 ## Installation
 1. Clone the repository
 2. Install dependencies: npm install
-3. Duplicate file cypress..env.json and rename file duplicated to cypress.env.json
+3. Rename file cypress.env copy.json to cypress.env.json
 
 ## Usage
 To run the test suite, execute the following command:
