@@ -31,3 +31,27 @@ Then(/^User success login and redirected to dashboard page$/, () => {
     cy.url().should('eq', 'https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index')
     return true;
 });
+
+
+Given(/^User open OrangeHRM website$/, () => {
+    loginPage.visit()
+    loginPage.getOrangeHRMLogo().should('be.visible')
+    cy.url().should('eq', 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
+    return true;
+});
+
+When(/^User fill password field with invalid password$/, () => {
+    loginPage.getPasswordField().type('admin')
+	return true;
+});
+
+Then(/^User didn't sign in using invalid password$/, () => {
+    loginPage.getOrangeHRMLogo().should('be.visible')
+    cy.url().should('eq', 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
+    return true;
+});
+
+Then(/^Invalid credential notification visible$/, () => {
+	loginPage.getAlertMessageError().contains('Invalid credentials').should('be.visible')
+    return true;
+});
