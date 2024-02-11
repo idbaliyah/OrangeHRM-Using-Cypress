@@ -46,7 +46,7 @@ const setupNodeEvents = async (on, config) => {
 
 module.exports = defineConfig({
   e2e: {
-    baseUrl: "urlSite",
+    baseUrl: "https://opensource-demo.orangehrmlive.com",
     specPattern: "**/*.feature",
     watchForFileChanges: false,
     video: false,
@@ -54,7 +54,7 @@ module.exports = defineConfig({
     viewportWidth: 1920,
     viewportHeight: 1080,
     defaultCommandTimeout: 10000,//timeout ms
-    retries: 10, //configure the retry attempts for all tests run in both cypress run and cypress open
+    // retries: 10, //configure the retry attempts for all tests run in both cypress run and cypress open
     env: {
       "xpath": true
     }
