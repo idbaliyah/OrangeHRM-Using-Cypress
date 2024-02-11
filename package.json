@@ -4,7 +4,16 @@
   "description": "SwagLabs Automation Testing Using Cypress Framework and POM Implementation",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cy:open-chrome": "cypress open --e2e --browser chrome",
+    "cy:open-firefox": "cypress open --e2e --browser firefox",
+    "cy:open-electron": "cypress open --e2e --browser electron",
+    "test:chrome": "cypress run --e2e --spec **/*.feature --browser chrome",
+    "test:firefox": "cypress run --e2e --spec **/*.feature --browser firefox",
+    "test:electron": "cypress run --e2e --spec **/*.feature --browser electron",
+    "report": "node cypress.report.js",
+    "cy:test-chrome": "npm run test:chrome && npm run report",
+    "cy:test-firefox": "npm run test:firefox && npm run report",
+    "cy:test-electron": "npm run test:electron && npm run report"
   },
   "keywords": [],
   "author": "",
