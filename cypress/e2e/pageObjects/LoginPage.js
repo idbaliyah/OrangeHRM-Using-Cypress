@@ -2,6 +2,7 @@ const ORANGEHRM_LOGO = ".orangehrm-login-branding"
 const USERNAME_FIELD = "[name='username']"
 const PASSWORD_FIELD = "[name='password']"
 const LOGIN_BUTTON = ".oxd-button"
+const ALERT_MESSAGE_ERROR = ".oxd-alert"
 
 class LoginPage {
     visit() {
@@ -18,6 +19,9 @@ class LoginPage {
     }
     getLoginButton() {
         return cy.get(LOGIN_BUTTON)
+    }
+    getAlertMessageError() {
+        return cy.get(ALERT_MESSAGE_ERROR)
     }
 }
 
