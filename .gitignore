@@ -2,3 +2,4 @@ node_modules
 cypress.env.json
 downloads
 screenshots
+reports
