@@ -35,8 +35,8 @@ report.generate({
     customData: {
         title: 'Run Info',
         data: [
-            { label: 'Project', value: 'SwagLabs' },
-            { label: 'Release', value: '0.0' },
+            { label: 'Project', value: 'OrangeHRM' },
+            { label: 'Release', value: '5.6' },
             { label: 'Test Environment', value: 'Prod' },
             { label: 'Cypress Version', value: runInfo['cypressVersion'] },
             { label: 'Node Version', value: runInfo['nodeVersion'] },
@@ -51,7 +51,7 @@ report.generate({
         ],
     },
     disableLog: true,
-    pageTitle: 'SwagLabs',
+    pageTitle: 'OrangeHRM',
     openReportInBrowser: true,
     displayDuration: true,
 })
