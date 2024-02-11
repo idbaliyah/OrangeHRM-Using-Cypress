@@ -1,5 +1,5 @@
-# SwagLabs-Using-Cypress
-SwagLabs Automation Testing Using Cypress Framework and POM Implementation
+# OrangeHRM-Using-Cypress
+OrangeHRM Automation Testing Using Cypress Framework and POM Implementation
 
 ## Table Contents
 - [Features](#Features)
